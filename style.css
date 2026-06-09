@@ -864,3 +864,82 @@ height:80px !important;
 }
 
 }
+
+/* ===== SIMPLE HEADER ===== */
+
+header {
+
+width:100%;
+
+background:#fffaf5;
+
+padding:25px 8%;
+
+display:flex;
+
+justify-content:center;
+
+position:relative;
+
+box-shadow:0 5px 20px rgba(70,40,20,.08);
+
+}
+
+
+header nav {
+
+display:flex;
+
+gap:45px;
+
+align-items:center;
+
+}
+
+
+header nav a {
+
+text-decoration:none;
+
+color:#4d3326;
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+
+header nav a:last-child {
+
+background:#b9805d;
+
+color:white;
+
+padding:14px 30px;
+
+border-radius:40px;
+
+}
+
+
+@media(max-width:700px){
+
+header nav {
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+header nav a {
+
+font-size:17px;
+
+}
+
+}
