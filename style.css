@@ -979,7 +979,7 @@ display:grid;
 
 grid-template-columns:repeat(4,1fr);
 
-gap:30px;
+gap:35px;
 
 margin-top:50px;
 
@@ -992,13 +992,13 @@ margin-top:50px;
 .cookie-item {
 
 
-background:white;
+background:transparent;
 
 
 border-radius:35px;
 
 
-padding:25px;
+padding:15px;
 
 
 cursor:pointer;
@@ -1058,7 +1058,7 @@ border:3px solid #b9805d;
 width:100%;
 
 
-height:220px;
+height:320px;
 
 
 object-fit:contain;
