@@ -766,3 +766,25 @@ width:90%;
 
 
 }
+
+/* ===== FIXES ===== */
+
+header {
+    position: relative !important;
+    top: auto !important;
+    z-index: 1 !important;
+}
+
+.logo img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+.corpus-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+}
