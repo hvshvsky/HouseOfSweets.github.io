@@ -611,3 +611,61 @@ text-align:center;
 padding:30px;
 
 }
+
+
+.why {
+
+padding:80px 10%;
+
+background:#fffaf5;
+
+}
+
+
+
+.why-grid {
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.why-grid div {
+
+background:white;
+
+padding:35px;
+
+border-radius:35px;
+
+
+box-shadow:
+0 15px 40px rgba(70,40,20,.1);
+
+}
+
+
+
+.why-grid h3 {
+
+color:#4b3025;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.why-grid {
+
+grid-template-columns:1fr;
+
+}
+
+}
