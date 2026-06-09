@@ -52,20 +52,27 @@ button,
 
 .hero {
 
-    min-height: 750px;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+min-height:750px;
 
-    padding:80px 10%;
 
-    background:
-    linear-gradient(
-    90deg,
-    #f7f2ec 50%,
-    #eee4d7 50%
-    );
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+
+padding:80px 10%;
+
+
+background:#f7f2ec;
+
+
+gap:50px;
+
+
+}
 
 }
 
@@ -73,11 +80,13 @@ button,
 
 .hero img {
 
-    width:48%;
+    width:52%;
 
     border-radius:45px;
 
     object-fit:cover;
+
+    margin-right:20px;
 
     box-shadow:
     0 25px 60px rgba(80,50,30,.25);
