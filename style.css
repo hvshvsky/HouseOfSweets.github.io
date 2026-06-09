@@ -631,3 +631,20 @@ grid-template-columns:1fr;
 
 
 }
+header {
+
+position:sticky;
+
+top:0;
+
+z-index:10;
+
+
+background:#fffaf5;
+
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.05);
+
+
+}
