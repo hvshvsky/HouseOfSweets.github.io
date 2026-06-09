@@ -920,7 +920,98 @@ Telegram
 
 
 
+<script>
 
+
+const cookies =
+document.querySelectorAll(".cookie-item");
+
+
+
+const title =
+document.getElementById("cookie-title");
+
+
+const text =
+document.getElementById("cookie-text");
+
+
+const price =
+document.getElementById("cookie-price");
+
+
+
+const info = [
+
+
+{
+title:"Красный бархат с маршмеллоу",
+text:"Нежный шоколадный кукис с мягким маршмеллоу внутри и насыщенным вкусом красного бархата 🤍"
+},
+
+
+{
+title:"Шоко с арахисом и карамелью",
+text:"Шоколадное печенье с хрустящим арахисом и нежной карамельной начинкой 🍫"
+},
+
+
+{
+title:"Классика с кусочками шоколада",
+text:"Мягкое печенье с большим количеством шоколадных кусочков — уютная классика ✨"
+},
+
+
+{
+title:"Шоко с фундуком и карамелью",
+text:"Насыщенный шоколадный кукис с фундуком и карамельным вкусом 🌰"
+}
+
+
+];
+
+
+
+
+
+cookies.forEach((cookie,index)=>{
+
+
+cookie.onclick=()=>{
+
+
+cookies.forEach(item=>{
+
+item.classList.remove("active");
+
+});
+
+
+
+cookie.classList.add("active");
+
+
+
+title.textContent =
+info[index].title;
+
+
+text.textContent =
+info[index].text;
+
+
+price.textContent =
+"170 ₽";
+
+
+}
+
+
+});
+
+
+
+</script>
 
 
 </body>
