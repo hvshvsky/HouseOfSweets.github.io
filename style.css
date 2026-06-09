@@ -1183,3 +1183,14 @@ height:160px;
 
 
 }
+
+/* ссылки внутри меню */
+
+.menu-card a,
+.menu-card h3 a {
+
+color:#4d3326;
+
+text-decoration:none;
+
+}
