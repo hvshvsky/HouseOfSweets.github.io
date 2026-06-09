@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Дом сладостей</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ОСНОВА */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f3ef;
+    color: #3b2e2a;
+}
+
+/* ШАПКА */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    font-size: 22px;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #3b2e2a;
+}
+
+/* ГЛАВНЫЙ ЭКРАН */
+
+.hero {
+    height: 90vh;
+    background: url('macarons.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+/* ТЕПЛЫЙ ФИЛЬТР (магия уюта) */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 235, 220, 0.65);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-family: 'Playfair Display';
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* КНОПКА */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #c8a27a;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* СЕКЦИИ */
+
+.section {
+    padding: 40px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+/* МЕНЮ */
+
+.menu {
+    max-width: 600px;
+    margin: auto;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    border-bottom: 1px solid #e5dcd3;
+    padding-bottom: 5px;
+}
+
+/* КОНТАКТЫ */
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #c8a27a;
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Дом сладостей</div>
+    <nav>
+        <a href="#menu">Меню</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Создаем для вас самые вкусные моменты жизни</h1>
+        <p>Свежая выпечка, шоколад и счастье 💛</p>
+        <a href="#menu" class="btn">Смотреть меню</a>
+    </div>
+</section>
+
+<section class="section" id="menu">
+    <h2>Меню</h2>
+
+    <div class="menu">
+
+        <div class="menu-item">
+            <span>Макарон</span>
+            <span>200–250 ₽</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Пирожное «Картошка»</span>
+            <span>390–1170 ₽</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Синнабон</span>
+            <span>400–800 ₽</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Бенто-торт</span>
+            <span>1500 ₽</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Капкейк</span>
+            <span>от 170 ₽</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Кукис</span>
+            <span>170 ₽</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <h2>Контакты</h2>
+
+    <p>📍 Смоленск, ул. Попова, 113</p>
+    <p>📞 +7 915 637 6030 (Ольга)</p>
+
+    <p>
+        <a href="https://vk.com/houseofsweets67">ВКонтакте</a><br>
+        <a href="https://t.me/houseofsweets67">Telegram</a>
+    </p>
+
+    <p>🚚 Доставка бесплатно от 1000 ₽</p>
+
+</section>
+
+</body>
+</html>
