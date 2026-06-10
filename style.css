@@ -8,15 +8,26 @@ body {
 
 margin:0;
 
-background:#f7f2ec;
+background:
+radial-gradient(
+circle at top,
+rgba(255,255,255,.8),
+transparent 40%
+),
+#f7f2ec;
+
 
 color:#4d3326;
 
-font-family:Arial, sans-serif;
+font-family:'Montserrat',sans-serif;
 
 }
 
+h1,h2,h3 {
 
+font-family:'Playfair Display',serif;
+
+}
 
 html {
 
@@ -198,6 +209,7 @@ line-height:1.5;
 
 width:50%;
 
+border:10px solid #fffaf5;
 
 border-radius:45px;
 
@@ -1040,8 +1052,8 @@ transform:scale(1.08);
 
 
 box-shadow:
+0 0 0 8px rgba(185,128,93,.15),
 0 25px 60px rgba(70,40,20,.25);
-
 
 border:3px solid #b9805d;
 
@@ -1198,5 +1210,29 @@ text-decoration:none;
 .menu-card a {
 
 font-weight:bold;
+
+}
+
+.menu-card,
+.corpus-card,
+.cookie-item {
+
+
+transition:
+transform .3s ease,
+box-shadow .3s ease;
+
+}
+
+
+.menu-card:hover,
+.corpus-card:hover,
+.cookie-item:hover {
+
+
+transform:translateY(-10px);
+
+box-shadow:
+0 25px 50px rgba(70,40,20,.18);
 
 }
