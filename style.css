@@ -14,7 +14,7 @@ circle at top,
 rgba(255,255,255,.8),
 transparent 40%
 ),
-#f7f2ec;
+#f5f5f3;
 
 
 color:#4d3326;
@@ -39,7 +39,7 @@ header {
   
   position:relative;
   
-  background:#fffaf5;
+  background:#ffffff;
   
   box-shadow:
     0 5px 20px rgba(0,0,0, .05);
@@ -87,7 +87,7 @@ font-weight:bold;
 .main-btn {
 
 
-background:#b9805d;
+background:#d8a7b1;
 
 color:white;
 
@@ -115,7 +115,7 @@ transition:.3s;
 .main-btn:hover {
 
 
-background:#8f5d3d;
+background:#c48f9b;
 
 transform:translateY(-3px);
 
@@ -149,7 +149,7 @@ gap:50px;
 padding:80px 10%;
 
 
-background:#f7f2ec;
+background:#f5f5f3;
 
 
 }
@@ -209,13 +209,12 @@ line-height:1.5;
 
 width:50%;
 
-border:10px solid #fffaf5;
+border:10px solid #ffffff;
 
 border-radius:45px;
 
 
-box-shadow:
-0 25px 60px rgba(70,40,20,.2);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 
 
 }
@@ -259,7 +258,7 @@ color:#4b3025;
 .why {
 
 
-background:#fffaf5;
+background:#ffffff;
 
 }
 
@@ -326,7 +325,7 @@ gap:25px;
 .menu-card {
 
 
-background:#fffaf5;
+background:#ffffff;
 
 
 padding:30px;
@@ -372,7 +371,7 @@ align-items:center;
 gap:60px;
 
 
-background:#fffaf5;
+background:#ffffff;
 
 
 }
@@ -437,20 +436,17 @@ margin-bottom:40px;
 
 
 .corpus-grid {
-
-
-display:grid;
-
-
-grid-template-columns:repeat(3,1fr);
-
-
-gap:30px;
-
-
+display:flex;
+overflow-x:auto;
+gap:25px;
+padding-bottom:10px;
+scroll-snap-type:x mandatory;
 }
 
-
+.corpus-card {
+min-width:260px;
+scroll-snap-align:start;
+}
 
 
 .corpus-card {
@@ -566,7 +562,7 @@ color:#b06f45;
 #contacts {
 
 
-background:#fffaf5;
+background:#ffffff;
 
 
 border-radius:50px;
@@ -595,7 +591,7 @@ justify-content:center;
 align-items:center;
 
 
-background:#b9805d;
+background:#d8a7b1;
 
 
 color:white;
@@ -629,7 +625,7 @@ transition:.3s;
 #contacts a:hover {
 
 
-background:#8f5d3d;
+background:#c48f9b;
 
 
 transform:translateY(-5px);
@@ -797,7 +793,7 @@ justify-content:space-between;
 
 padding:20px 8%;
 
-background:#fffaf5;
+background:#ffffff;
 
 box-shadow:none;
 
@@ -837,7 +833,7 @@ font-size:18px;
 
 .order-btn {
 
-background:#b9805d !important;
+background:#d8a7b1 !important;
 
 color:white !important;
 
@@ -883,7 +879,7 @@ header {
 
 width:100%;
 
-background:#fffaf5;
+background:#ffffff;
 
 padding:25px 8%;
 
@@ -924,7 +920,7 @@ font-weight:bold;
 
 header nav a:last-child {
 
-background:#b9805d;
+background:#d8a7b1;
 
 color:white;
 
@@ -962,7 +958,7 @@ font-size:17px;
 
 .cookies {
 
-background:#fffaf5;
+background:#ffffff;
 
 padding:90px 8%;
 
@@ -1055,7 +1051,7 @@ box-shadow:
 0 0 0 8px rgba(185,128,93,.15),
 0 25px 60px rgba(70,40,20,.25);
 
-border:3px solid #b9805d;
+border:2px solid #d8a7b1;
 
 
 }
@@ -1141,7 +1137,7 @@ margin-top:20px;
 font-size:28px;
 
 
-color:#b9805d;
+color:#d8a7b1;
 
 
 }
@@ -1232,7 +1228,15 @@ box-shadow .3s ease;
 
 transform:translateY(-10px);
 
-box-shadow:
-0 25px 50px rgba(70,40,20,.18);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 
+}
+
+.menu-note {
+text-align:center;
+max-width:600px;
+margin:20px auto 40px;
+color:#8b8b8b;
+font-size:16px;
+line-height:1.5;
 }
