@@ -715,10 +715,8 @@ width:90%;
 }
 
 
-
 .why-grid,
-.menu-grid,
-.corpus-grid {
+.menu-grid {
 
 
 grid-template-columns:1fr;
