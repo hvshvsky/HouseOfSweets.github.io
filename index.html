@@ -17,22 +17,55 @@
 </nav>
 </header>
 
+<section class="hero">
+  <h1>Дом сладостей</h1>
+  <p>Создаем для вас самые вкусные моменты жизни</p>
+</section>
 
+<section class="advantages">
+  <h2>Почему выбирают нас?</h2>
+
+  <div class="adv-item">
+    <h3>Натуральные ингредиенты</h3>
+    <p>Используем только качественные продукты</p>
+  </div>
+
+  <div class="adv-item">
+    <h3>Свежесть</h3>
+    <p>Готовим под заказ</p>
+  </div>
+
+  <div class="adv-item">
+    <h3>Индивидуальный подход</h3>
+    <p>Учитываем все пожелания</p>
+  </div>
+</section>
+  
 <!-- ===== МЕНЮ ===== -->
 <section id="menu">
 
 <h2>Наше меню</h2>
 
 <p class="menu-hint">
-Нажмите на десерт, чтобы узнать подробности.<br>
-Функция полного просмотра находится в разработке.
+  Нажмите на десерт, чтобы узнать подробности
+  <span class="more-text">Функция полного просмотра находится в разработке</span>
 </p>
+
+<button onclick="toggleText()">Подробнее</button>
+
+<script>
+function toggleText() {
+  document.querySelector('.more-text').classList.toggle('show');
+}
+</script>
 
 <div class="menu-grid">
 
 <div class="menu-card">
 <h3>Торт</h3>
 <p>1 кг — 2000 ₽</p>
+<h3>Бенто-торт</h3>
+<span class="price">500 г - 1500 ₽</span>
 <span>Оформление обсуждается индивидуально</span>
 </div>
 
@@ -53,17 +86,19 @@
 
 <div class="menu-card">
 <h3>Синнабон</h3>
-<p>Классика / шоколад — 340 ₽<br>Мини — 215 ₽</p>
+<p>Классический синнабон / шокобон — 340 ₽<br>Минибон — 215 ₽</p>
 </div>
 
 <div class="menu-card">
 <h3>Капкейк</h3>
 <p>1 шт — 210 ₽</p>
+<p>Оформление обсуждается при заказе</p>
 </div>
 
 <div class="menu-card">
 <h3>Макарон</h3>
-<p>Цена без изменений</p>
+<p>Открытый — 200 ₽</p>
+<p>Закрытый — 250 ₽</p>
 </div>
 
 </div>
@@ -164,7 +199,19 @@
 
 </section>
 
+<section class="cakes">
+  <h2>Вкусы</h2>
 
+  <div class="cake-option">Шоколадный</div>
+  <div class="cake-option">Ягодный</div>
+  <div class="cake-option">Карамельный</div>
+
+  <p>
+    Оформление, размеры и упаковка обсуждаются индивидуально 
+    и влияют на итоговую стоимость
+  </p>
+</section>
+  
 <!-- ===== КОНТАКТЫ ===== -->
 <section id="contacts">
 
