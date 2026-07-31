@@ -1240,3 +1240,15 @@ color:#8b8b8b;
 font-size:16px;
 line-height:1.5;
 }
+
+.kartoshka-prices {
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid #e0e0e0;
+text-align:center;
+}
+
+.kartoshka-prices p {
+font-size:18px;
+margin:8px 0;
+}
