@@ -533,7 +533,7 @@ font-size:22px;
 color:#d8a7b1;
 
 
-
+}
 
 
 
@@ -1156,10 +1156,16 @@ transform:translateY(0);
 
 .cookie-list {
 
-grid-template-columns:1fr 1fr;
+flex-wrap:wrap;
 
 }
 
+
+.cookie-item {
+
+min-width:150px;
+
+}
 
 
 .cookie-item img {
@@ -1286,7 +1292,7 @@ left:-10px;
 right:-10px;
 }
 
-}
+
 
 .cakes {
 
