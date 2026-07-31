@@ -719,7 +719,17 @@
 
 
 
+<div class="corpus-wrapper">
 
+<button class="arrow left" onclick="scrollCorpus(-1)">‹</button>
+
+<div class="corpus-grid" id="corpusGrid">
+... твои карточки ...
+</div>
+
+<button class="arrow right" onclick="scrollCorpus(1)">›</button>
+
+</div>
 
 
 
@@ -1028,3 +1038,15 @@ price.textContent=data[index].price;
 
 
 </html>
+
+<script>
+function scrollCorpus(direction) {
+const container = document.getElementById('corpusGrid');
+const scrollAmount = 280;
+
+container.scrollBy({
+left: direction * scrollAmount,
+behavior: 'smooth'
+});
+}
+</script>
