@@ -1382,16 +1382,26 @@ border:1px solid rgba(216,167,177,.18);
 }
 
 .arrow {
-  background: #e7a6b3;
-  border: none;
-  color: white;
-  font-size: 20px;
+  background: white; /* было розовое */
+  color: #e7a6b3; /* стрелка розовая */
 
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
+  border: 1px solid #e7a6b3;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
+  font-size: 20px;
+}
+
+.arrow:hover {
+  background: #e7a6b3;
+  color: white;
 }
 
 .corpus-grid {
@@ -1450,18 +1460,18 @@ border:1px solid rgba(216,167,177,.18);
 
   background: #e7a6b3;
   border-radius: 28px;
-  padding: 6px;
+  padding: 12px;
 
   display: flex;
-  gap: 15px;
-  align-items: center;
+  flex-direction: column; /* ВОТ ЭТО ГЛАВНОЕ */
+  gap: 10px;
 }
 
 .corpus-item img {
   width: 100px;
-  height: 100px;
+  height: 180px;
   min-width: 100px;
 
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 18px;
 }
