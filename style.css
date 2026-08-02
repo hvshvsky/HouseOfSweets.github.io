@@ -1409,10 +1409,12 @@ border:1px solid rgba(216,167,177,.18);
 }
 
 .corpus-item img {
-  width: 110px;
-  height: 110px;
+  width: 110px !important;
+  height: 110px !important;
+  min-width: 110px;
+
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 16px;
 }
 
 .corpus-item {
