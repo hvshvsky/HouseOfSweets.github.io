@@ -433,37 +433,8 @@ margin-bottom:40px;
 
 
 
-.corpus-grid {
-display:flex;
-overflow-x:auto;
-gap:25px;
-padding-bottom:10px;
-scroll-snap-type:x mandatory;
-}
 
-.corpus-card {
-min-width:260px;
-scroll-snap-align:start;
-}
-
-
-
-
-
-
-.corpus-card:hover {
-
-
-transform:translateY(-8px);
-
-
-}
-
-
-
-
-
-.corpus-card img {
+.corpus-item img {
 
 
 width:100%;
@@ -479,9 +450,9 @@ object-fit:cover;
 
 
 
-.corpus-card h3,
-.corpus-card p,
-.corpus-card strong {
+.corpus-item h3,
+.corpus-item p,
+.corpus-item strong {
 
 
 margin-left:25px;
@@ -493,7 +464,7 @@ margin-right:25px;
 
 
 
-.corpus-card h3 {
+.corpus-item h3 {
 
 
 font-size:25px;
@@ -508,7 +479,7 @@ font-weight:500;
 }
 
 
-.corpus-card p {
+.corpus-item p {
 
 
 line-height:1.5;
@@ -518,7 +489,7 @@ line-height:1.5;
 
 
 
-.corpus-card strong {
+.corpus-item strong {
 
 
 display:block;
@@ -1195,7 +1166,7 @@ font-weight:bold;
 }
 
 .menu-card,
-.corpus-card,
+.corpus-item,
 .cookie-item {
 
 
@@ -1207,7 +1178,7 @@ box-shadow .3s ease;
 
 
 .menu-card:hover,
-.corpus-card:hover,
+.corpus-item:hover,
 .cookie-item:hover {
 
 
@@ -1426,7 +1397,7 @@ transform:scale(1.12);
 }
 
 .menu-card,
-.corpus-card,
+.corpus-item,
 .cookie-item,
 .cake-flavors div {
 
