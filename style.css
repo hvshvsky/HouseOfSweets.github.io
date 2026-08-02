@@ -29,6 +29,8 @@ font-family:'Playfair Display',serif;
 
 }
 
+
+
 html {
 
 scroll-behavior:smooth;
@@ -1404,4 +1406,63 @@ transform:scale(1.12);
 
 border:1px solid rgba(216,167,177,.18);
 
+}
+
+/* ===== КОРПУСНЫЕ (НОВЫЕ) ===== */
+
+.corpus-grid {
+display:flex;
+gap:20px;
+
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+
+padding:20px;
+}
+
+.corpus-grid::-webkit-scrollbar {
+display:none;
+}
+
+.corpus-card {
+min-width:260px;
+flex:0 0 auto;
+
+scroll-snap-align:center;
+
+background:#fffdfc;
+border-radius:30px;
+padding:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+text-align:center;
+}
+
+.corpus-card img {
+width:100%;
+height:200px;
+
+object-fit:contain;
+
+background:#f7f3f2;
+border-radius:20px;
+padding:15px;
+}
+
+.corpus-card h3 {
+font-size:22px;
+margin:10px 0;
+}
+
+.corpus-card p {
+font-size:14px;
+color:#666;
+}
+
+.corpus-card strong {
+display:block;
+margin-top:10px;
+color:#d8a7b1;
+font-size:18px;
 }
