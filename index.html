@@ -1019,3 +1019,15 @@ behavior: 'smooth'
 });
 }
 </script>
+
+<script>
+const list = document.querySelector('.corpus-list');
+
+document.querySelector('.arrow.left').onclick = () => {
+  list.scrollBy({ left: -300, behavior: 'smooth' });
+};
+
+document.querySelector('.arrow.right').onclick = () => {
+  list.scrollBy({ left: 300, behavior: 'smooth' });
+};
+</script>
