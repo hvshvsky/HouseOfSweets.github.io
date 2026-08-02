@@ -1422,3 +1422,23 @@ border:1px solid rgba(216,167,177,.18);
   gap: 15px;
   align-items: center;
 }
+
+.corpus-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 🔴 ВАЖНО: контейнер для картинки */
+.corpus-item img {
+  width: 100px !important;
+  height: 100px !important;
+  max-width: 100px !important;
+  max-height: 100px !important;
+
+  flex-shrink: 0; /* запрещает растягиваться */
+
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
